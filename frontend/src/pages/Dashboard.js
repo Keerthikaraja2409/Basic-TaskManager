@@ -120,27 +120,91 @@ const Dashboard = () => {
 
                 <Grid container spacing={3} sx={{ mb: 4 }}>
                   <Grid item xs={12} sm={6} md={3}>
-                    <Paper sx={{ p: 3, textAlign: 'center', background: 'linear-gradient(135deg, #4F5BFF 0%, #3D46E0 100%)', color: 'white' }}>
-                      <Typography variant="h4" sx={{ fontWeight: 700 }}>{stats.total}</Typography>
-                      <Typography variant="body1">Total Tasks</Typography>
+                    <Paper 
+                      sx={{ 
+                        p: 3, 
+                        textAlign: 'center', 
+                        background: 'linear-gradient(135deg, #4F5BFF 0%, #3D46E0 100%)', 
+                        color: 'white',
+                        borderRadius: 3,
+                        cursor: 'pointer',
+                        transition: 'all 0.3s ease',
+                        boxShadow: '0 4px 20px rgba(79, 91, 255, 0.2)',
+                        '&:hover': {
+                          transform: 'translateY(-4px)',
+                          boxShadow: '0 8px 30px rgba(79, 91, 255, 0.4)',
+                          background: 'linear-gradient(135deg, #6B7CFF 0%, #4F5BFF 100%)'
+                        }
+                      }}
+                    >
+                      <Typography variant="h4" sx={{ fontWeight: 700, mb: 1 }}>{stats.total}</Typography>
+                      <Typography variant="body1" sx={{ opacity: 0.9 }}>Total Tasks</Typography>
                     </Paper>
                   </Grid>
                   <Grid item xs={12} sm={6} md={3}>
-                    <Paper sx={{ p: 3, textAlign: 'center', background: 'linear-gradient(135deg, #6B7CFF 0%, #4F5BFF 100%)', color: 'white' }}>
-                      <Typography variant="h4" sx={{ fontWeight: 700 }}>{stats.pending}</Typography>
-                      <Typography variant="body1">Pending</Typography>
+                    <Paper 
+                      sx={{ 
+                        p: 3, 
+                        textAlign: 'center', 
+                        background: 'linear-gradient(135deg, #FF6B8A 0%, #FF9BB0 100%)', 
+                        color: 'white',
+                        borderRadius: 3,
+                        cursor: 'pointer',
+                        transition: 'all 0.3s ease',
+                        boxShadow: '0 4px 20px rgba(255, 107, 138, 0.2)',
+                        '&:hover': {
+                          transform: 'translateY(-4px)',
+                          boxShadow: '0 8px 30px rgba(255, 107, 138, 0.4)',
+                          background: 'linear-gradient(135deg, #FF9BB0 0%, #FF6B8A 100%)'
+                        }
+                      }}
+                    >
+                      <Typography variant="h4" sx={{ fontWeight: 700, mb: 1 }}>{stats.pending}</Typography>
+                      <Typography variant="body1" sx={{ opacity: 0.9 }}>Pending</Typography>
                     </Paper>
                   </Grid>
                   <Grid item xs={12} sm={6} md={3}>
-                    <Paper sx={{ p: 3, textAlign: 'center', background: 'linear-gradient(135deg, #FFC83D 0%, #FFD966 100%)', color: 'white' }}>
-                      <Typography variant="h4" sx={{ fontWeight: 700 }}>{stats.inProgress}</Typography>
-                      <Typography variant="body1">In Progress</Typography>
+                    <Paper 
+                      sx={{ 
+                        p: 3, 
+                        textAlign: 'center', 
+                        background: 'linear-gradient(135deg, #FFC83D 0%, #FFD966 100%)', 
+                        color: 'white',
+                        borderRadius: 3,
+                        cursor: 'pointer',
+                        transition: 'all 0.3s ease',
+                        boxShadow: '0 4px 20px rgba(255, 200, 61, 0.2)',
+                        '&:hover': {
+                          transform: 'translateY(-4px)',
+                          boxShadow: '0 8px 30px rgba(255, 200, 61, 0.4)',
+                          background: 'linear-gradient(135deg, #FFD966 0%, #FFC83D 100%)'
+                        }
+                      }}
+                    >
+                      <Typography variant="h4" sx={{ fontWeight: 700, mb: 1 }}>{stats.inProgress}</Typography>
+                      <Typography variant="body1" sx={{ opacity: 0.9 }}>In Progress</Typography>
                     </Paper>
                   </Grid>
                   <Grid item xs={12} sm={6} md={3}>
-                    <Paper sx={{ p: 3, textAlign: 'center', background: 'linear-gradient(135deg, #2ED573 0%, #A3F7BF 100%)', color: 'white' }}>
-                      <Typography variant="h4" sx={{ fontWeight: 700 }}>{stats.completed}</Typography>
-                      <Typography variant="body1">Completed</Typography>
+                    <Paper 
+                      sx={{ 
+                        p: 3, 
+                        textAlign: 'center', 
+                        background: 'linear-gradient(135deg, #2ED573 0%, #A3F7BF 100%)', 
+                        color: 'white',
+                        borderRadius: 3,
+                        cursor: 'pointer',
+                        transition: 'all 0.3s ease',
+                        boxShadow: '0 4px 20px rgba(46, 213, 115, 0.2)',
+                        '&:hover': {
+                          transform: 'translateY(-4px)',
+                          boxShadow: '0 8px 30px rgba(46, 213, 115, 0.4)',
+                          background: 'linear-gradient(135deg, #A3F7BF 0%, #2ED573 100%)'
+                        }
+                      }}
+                    >
+                      <Typography variant="h4" sx={{ fontWeight: 700, mb: 1 }}>{stats.completed}</Typography>
+                      <Typography variant="body1" sx={{ opacity: 0.9 }}>Completed</Typography>
                     </Paper>
                   </Grid>
                 </Grid>
